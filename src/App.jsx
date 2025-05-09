@@ -6,6 +6,7 @@ import Categories from './pages/Categories'
 import Search from './pages/Search'
 import Favourites from './pages/Favourites'
 import SingleGif from './pages/SingleGif'
+import GifProvider from './context/GifContext'
 
 // homepage
 // categories
@@ -43,7 +44,9 @@ const router = createBrowserRouter([
 
 const App = () => {
     return (
-      <RouterProvider router={router}/>
+      <GifProvider>
+        <RouterProvider router={router}/>
+      </GifProvider>
     )
 }
 
