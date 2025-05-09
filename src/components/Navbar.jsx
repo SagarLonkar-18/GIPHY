@@ -10,8 +10,8 @@ const Navbar = () => {
     const { gf , filter, setFilter, favourites } = GifState();
 
     const fetchGifsCategories = async () => {
-        const data = await gf.categories();
-        setCategories(data.data);
+        const {data} = await gf.categories();
+        setCategories(data);
     }
 
     console.log(categories);
