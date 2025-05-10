@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { GifState } from '../context/GifContext';
 import Gif from '../components/Gif';
+import FilterGifs from '../components/FilterGifs';
 
 const Home = () => {
 
@@ -22,7 +23,7 @@ const Home = () => {
     return (
         <div>
             <img src="/banner.gif" alt="banner" className='mt-2 rounded w-full' />
-            {/* <FilterGif/> */}
+            <FilterGifs showTrending={true} alignLeft={true}/>
 
             <div className='columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-2 mt-4'>
                 {

@@ -7,7 +7,7 @@ const Navbar = () => {
     const [categories, setCategories] = useState([]);
     const [showCategories, setShowCategories] = useState(false);
 
-    const { gf , filter, setFilter, favourites } = GifState();
+    const { gf , favourites } = GifState();
 
     const fetchGifsCategories = async () => {
         const {data} = await gf.categories();
