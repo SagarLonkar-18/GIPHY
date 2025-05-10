@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { HiEllipsisVertical, HiMiniBars3BottomRight} from "react-icons/hi2";
 import { GifState } from '../context/GifContext';
+import { GiFishEscape } from 'react-icons/gi';
+import GifSearch from './GifSearch';
 
 const Navbar = () => {
     const [categories, setCategories] = useState([]);
@@ -72,6 +74,8 @@ const Navbar = () => {
             </div>
 
             {/* Search */}
+            <GifSearch/>
+
         </nav>
     )
 }
