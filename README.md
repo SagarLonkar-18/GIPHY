@@ -12,7 +12,7 @@ A modern, responsive GIF search and discovery app built with **React**, **Vite**
 
 ## Screenshots
 
-![App Screenshot](./assets/screenshot.jpg)
+![App Screenshot](./src/assets/screenshot.jpg)
 
 ## Getting Started
 
