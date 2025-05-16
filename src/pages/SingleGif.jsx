@@ -71,7 +71,7 @@ const SingleGif = () => {
             throw new Error("Invalid Content Type");
         }
         fetchGif(); 
-    }, [slug]);
+    }, [type,slug]);
 
     return (
         <div className='grid grid-cols-4 my-10 gap-4'>
